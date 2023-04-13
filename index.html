@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Frontend Mentor | [Blogr]</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,21 +28,51 @@
     </style>
   </head>
   <body>
-
     <header class="main-header">
       <div class="container">
         <nav class="navbar">
           <a href="/" class="navbar-brand">
-            <img src="./assets/images/logo.svg" alt="Blogr">
+            <img src="./assets/images/logo.svg" alt="Blogr" />
           </a>
           <ul class="navbar-nav">
-            li.nav-item*
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><span>Product</span
+                ><img src="./assets/images/icon-arrow-light.svg"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link"
+                ><span>Company</span
+                ><img src="/assets/images/icon-arrow-light.svg"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link"
+                ><span>Connect</span
+                ><img src="/assets/images/icon-arrow-light.svg"
+              /></a>
+            </li>
           </ul>
-          <button class="btn-menu"></button>
+          <div class="ml-auto navbar-nav">
+            <a href="" class="btn btn-tertiary">Login</a>
+            <a href="" class="btn btn-secondary">Sign up</a>
+          </div>
+          <button class="btn-menu">
+            <img src="./assets/images/icon-hamburger.svg" />
+          </button>
         </nav>
       </div>
-    </header>
 
+      <div class="hero">
+        <h2 class="hero-title">A modern publishing platform</h2>
+        <p class="caption">Grow your audience and build your online brand</p>
+        <div class="btn-group flex">
+          <a href="" class="btn btn-secondary">Start for free</a>
+          <a href="" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </header>
 
     <div class="attribution">
       Challenge by

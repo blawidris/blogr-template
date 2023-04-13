@@ -14,9 +14,9 @@
   --very-dark-black-blue: hsl(240, 10%, 16%);
 
   /* Gradient */
-  --very-light-red: hsl(13, 100%, 72%);
-  --light-red: hsl(353, 100%, 62%);
-  --very-dark-gray-blue: hsl(237, 17%, 21%);
+  --very-light-red-g: hsla(13, 100%, 72%, 0.8);
+  --light-red-g: hsla(353, 100%, 62%, 0.8);
+  --very-dark-gray-blue-g: hsl(237, 17%, 21%);
   --very-dark-blue-d: hsl(237, 23%, 32%);
 
   /* Font */
@@ -34,6 +34,147 @@
 }
 
 body {
-  font: 400 var(--body-font-size)/1.5 var(--body-font);
+  font: 400 var(--body-font-size) / 1.5 var(--body-font);
   scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: var(--header-font);
+  
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+/* Margin */
+.ml-auto,
+.ms-auto {
+  margin-left: auto;
+}
+
+/* Nav */
+
+.navbar,
+.navbar-nav,
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--white);
+  text-decoration: underline;
+  transition: color 0.3s ease-in "text-decoration" 0.4s ease-in-out;
+}
+
+/* buttons */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 2rem;
+  font-weight: 600;
+}
+
+.btn-primary {
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 50px;
+}
+
+.btn-secondary {
+  color: var(--very-light-red);
+  background-color: var(--white);
+  border-radius: 50px;
+  /* border: 1px solid var(--very-dark-grayish-blue); */
+}
+
+.btn-tertiary {
+  color: var(--white);
+}
+
+.btn-menu {
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+/* header */
+.main-header {
+  height: 90vh;
+  border-bottom-left-radius: 9rem;
+  background: linear-gradient(
+      137deg,
+      var(--very-light-red-g) 35%,
+      var(--light-red-g) 100%
+    ),
+    url("../images/bg-pattern-intro-desktop.svg") no-repeat center center/cover;
+
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header .navbar {
+  margin-left: 2rem;
+  padding-top: 2rem;
+}
+
+.main-header .navbar-nav .nav-link {
+  color: var(--white);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.main-header .navbar-nav .nav-link img {
+  width: 12px;
+  margin-left: 0.185rem;
+}
+
+.main-header .hero {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  flex: 0 0 auto;
+}
+
+.hero-title {
+  color: var(--white);
+  font-size: 50px;
 }
